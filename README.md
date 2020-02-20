@@ -11,7 +11,7 @@ It contains all the need Vue files to build a local version for Contributing rea
 - [Discord](https://discord.gg/AathPCp) - Place to Discuss stuff   
 
 ### Install
-- [Install NodeJS](https://nodejs.org/en/) Reccommended LTS version.  
+- [Install NodeJS](https://nodejs.org/en/) Recommended LTS version.  
 - Fork and Clone this project: `git clone https://github.com/KartulUdus/poracleWiki.git`  
 - Install dependencies `npm install`
 - Run a dev environment: `npm run dev`  
