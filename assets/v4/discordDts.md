@@ -354,6 +354,29 @@ Any of the fields can be customized with the following:
 |{{stateCode}}| 2 letter state code of the alerted location|
 |{{flagemoji}}|Country flag emoji for location|
 
+
+###### Weather
+
+```json
+  {
+    "id": 1,
+    "type": "weatherchange",
+    "default": true,
+    "platform": "discord",
+    "template": {
+      "embed": {
+        "title": "Weather change!",
+        "description": "NB! The weather for some active mons have changed from {{oldweather}} {{oldweatheremoji}} to {{weather}} {{weatheremoji}}!\nThis could have altered the reported IV!"
+      }
+    }
+  },
+```
+
+
+| Option        | Value         | 
+| --------------- |:-------------:
+|?|?
+
 ###### Greeting Message
 
 ```json
