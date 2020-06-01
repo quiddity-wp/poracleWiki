@@ -1,6 +1,6 @@
    # Custom Messages
 
-#### dts.json
+## dts.json
 
 All alarm messages can be customized via the `./config/dts.json` file.  
 
@@ -12,7 +12,7 @@ Each of these categories has 5 default templates (by versbosity of alarm) with d
 
 Sometimes it's necessary to use three curly braces on each side. This avoids url encoding for fields that need an url.  
 
-###### Monster alarms
+### Monster alarms
 
 ```json
 {
@@ -108,7 +108,7 @@ Any of the fields can be customized with the following:
 |{{areas}}| Matched geofence area names for alert|
 
 
-###### Raid alarms
+### Raid alarms
 
 ```json
    {
@@ -182,7 +182,7 @@ Any of the fields can be customized with the following:
 |{{areas}}| Matched geofence area names for alert|
 
 
-###### Egg alarms
+### Egg alarms
 
 ```json
   {
@@ -242,7 +242,7 @@ Any of the fields can be customized with the following:
 |{{flagemoji}}|Country flag emoji for location|
 
 
-###### Quest alarms
+### Quest alarms
 
 ```json
   {
@@ -297,7 +297,7 @@ Any of the fields can be customized with the following:
 |{{stateCode}}| 2 letter state code of the alerted location|
 |{{flagemoji}}|Country flag emoji for location|
 
-###### Invasion alarms
+### Invasion alarms
 
 ```json
   {
@@ -355,7 +355,7 @@ Any of the fields can be customized with the following:
 |{{flagemoji}}|Country flag emoji for location|
 
 
-###### Weather
+### Weather
 
 ```json
   {
@@ -377,7 +377,7 @@ Any of the fields can be customized with the following:
 | --------------- |:-------------:
 |?|?
 
-###### Greeting Message
+### Greeting Message
 
 ```json
   {
