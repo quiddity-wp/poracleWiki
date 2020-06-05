@@ -14,7 +14,7 @@
    ```
 
 2.  
-    a. Create a [discord bot](discordbot.md), add it to your server and take note of your token for later.  
+    a. Create a [discord bot](createBot), add it to your server and take note of your token for later.  
     
     or  
    
