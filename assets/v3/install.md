@@ -37,5 +37,5 @@
     ```
 
 7. That's it, now proceed to  
-[Enter some commands](commands.md).
+[Enter some commands](commands).
         
