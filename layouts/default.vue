@@ -99,7 +99,7 @@ export default {
 				{
 					icon: 'mdi-head-check',
 					title: 'Commands',
-					to: '/createBot'
+					to: '/commands'
 				},
 				{
 					icon: 'mdi-github-circle',
