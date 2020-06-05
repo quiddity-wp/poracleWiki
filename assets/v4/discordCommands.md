@@ -11,69 +11,69 @@ PoracleJS will react or reply to valid commands with either:
 * ✅ - Command successful
 * 👌 - Already done
 
-##### General commands
+## General commands
 
-###### !version
+### !version
 
 `!version` Shows current git status, version and recent commits of runnning Poracle instance
 
-###### !help
+### !help
 
 `!help` sends instructions on some basic commands (from config/dts.json greeting template)
 
-###### !poracle
+### !poracle
 
 `!poracle` is the command to register for alarms.  
 This is available in a designated channel set by the admin.  
 Once you successfully register, the bot will send you a DM with a greeting message
 
-###### !stop
+### !stop
 
 `!stop` Temporarily stops alarms
 
-###### !start
+### !start
 
 `!start` Restarts alarms if they were stopped
 
-###### !unregister
+### !unregister
 
 `!unregister` Deletes all users tracking information. After !unregistering, you would need to register again with `!poracle` before new alarms.
 
-###### !location 
+### !location 
 
 `!location Tallinn kesklinn` for example, would register a users's location to `59.42685179999999,24.7595564`  
 Instead of "Tallinn kesklinn" you can search for any address, city, country or known area available in google.
 
-###### !area add
+### !area add
 
 `!area add Tallinn` If the admin has set up a [Geofence](config.md)  name Tallinn, this command will add tracking from that area to the user.  
 In case the area is not configured, the bot will reply with the areas that are available.  
 You can also use multiple areas in the same command (separated by spaces) and only available ones will be added.  
 
-###### !area remove
+### !area remove
 
 `!area remove Tallinn` Removes Tallinn from tracked areas if configured and currently tracked.
 You can also use multiple areas in the same command (separated by spaces) and only available ones will be removed.
 
-###### !area list
+### !area list
 
 `!area list` lists the possible areas you can add.  
 
-###### !restore list
+### !restore list
 
 `!restore list` lists the possible filterset backups and admin can configure.  
 
-###### !restore <baclup Name>
+### !restore <baclup Name>
 
 `!restore potato` Restores your filters to a "potato" backup (if configured by this name).  
 
-###### !tracked  
+### !tracked  
 
 `!tracked` Shows a details list of Monsters, Raids, Eggs and quests user is tracking. Should the message exceed 6000 charecters, it will be uploaded into hastebin and a link will be sent to user. If hastebin is down (like it often is), the bot will create a temporary file and upload it to discord as a reply.
 
-##### Tracking commands
+## Wild Spawn Tracking commands
 
-###### !track
+### !track
 
 `!track pikachu raichu d500 iv50 level10` This command would add tracking for Pikachu and Raichu that are 500 meters from your location.  
 The command needs to include at least one monster and any amount of filters
@@ -105,13 +105,15 @@ available filters:
 |everything |`!track everything iv90 level20` | Tracks eveything with a minimum IV of 90% level 20 and higher. <br/> ⚠️This will overwrite all other monsters in the command⚠️ |
 |gen |`!track gen6 iv60 level15` | Tracks gen 6 pokemon with a minimum IV of 60% level 15 and higher. <br/> ⚠️This will overwrite all other monsters in the command⚠️ |
 
-###### !untrack
+### !untrack
 
 `!untrack pikachu raichu` This command would remove tracking for Pikachu and Raichu. 
 
 Any monster name can be used in the same command or alternatively `!untrack everything` would remove all monster tracking.
 
-###### !raid
+## Raid Tracking commands
+
+### !raid
 
 `!raid snorlax d1000 instinct` This command would add tracking for Snorlax raids within 1 km or within a tracked area if the gym is controlled by team Instinct
 
@@ -131,12 +133,12 @@ Available filters:
 |everything|`!raid everything`| Tracks Raids from level 1 - 5|
 |gen|`!raid gen5`| Tracks raids against gen5 pokemon|
 
-###### !raid remove
+### !raid remove
 
 `!raid remove snorlax` Removes tracking of Snorlax raids. 
 `!raid remove level5 level3` Removes tracking of level 5 and 3 raids.  
 
-###### !egg 
+### !egg 
 
 `!egg level5 d10000` Tracks level 5 raid eggs within 10 kilometers. Command must include a level.
 
@@ -153,12 +155,14 @@ Available filters:
 |harmony|`!egg level5 harmony`| Tracks level 5 eggs in uncontested gyms|
 |everything|`!egg everything`| Tracks Raids from level 1 - 5|
 
-###### !egg remove
+### !egg remove
 
 `!egg remove level2` Removes tracking of level 2 raid eggs.  
 Level is required to remove egg tracking.
 
-###### !quest
+## Quest Tracking commands
+
+### !quest
 
 `!quest pikachu poke ball stardust d10000` Tracks quests that would reward a pikachu, pokéballs or stardust within 10km
 
@@ -173,12 +177,14 @@ Available filters:
 |stardust|`!quest stardust d1000`| Tracks quests within 1km that awards stardust|
 
 
-###### !quest remove
+### !quest remove
 
 `!quest remove all pokemon pinap berry stardust`  
 Removes quest tracking for all pokemon, pinap berries and strdust.
 
-##### !invasion
+## Rocket Invasion Tracking commands
+
+## !invasion
 
 `!invasion fire mixed d1000` Tracks all invasions of mixed AND fire types on pokestops within 1 km
 `!invasion rock female` Tracks all rock invasions where the grunt is a female
@@ -193,7 +199,7 @@ Available filters:
 |female or male|`!invasion female`| Tracks only female or male invasions|
 |remove|`!invasion remove`| Removes all alerts|
 
-##### Admin commands
+## Admin commands
 
 Admin commands allow an admin to run DM commands (!track, !raid, !area, !location etc) in channels.
 Additionally, if the command includes a discord webhook (similar to `https://discordapp.com/api/webhooks/533935953597076/J5t8S43hi5fbg-eBVuJDhD2RX_FMSUl`) an admin could add tracking to any discord webhook.  
@@ -203,38 +209,38 @@ Admins for the bot are configured in `.env` or `config/local.json` with an array
 example:
 `ADMINS=["222742853648560458", "236899413619086080"]` 
 
-###### !unregister
+### !unregister
 
 `!unregister @Kartulipudru#4525` - This would unregister Kartulipudru and remove all of his trackings.
 
-###### !channel add
+### !channel add
 
 `!channel add` Command to add current text channel to receive alarms.  
 
-###### !channel remove
+### !channel remove
 
 `!channel remove` Command to remove current text channel and all of its trackings.
 
-###### !webhook add (Discord only)
+### !webhook add (Discord only)
 
 `!webhook add https://discordapp.com/api/webhooks/533935953597076/J5t8S43hi5fbg-eBVuJDhD2RX_FMSUl` Command to add webhook to receive alarms.  
 
-###### !webhook remove (Discord only)
+### !webhook remove (Discord only)
 
 `!webhook remove https://discordapp.com/api/webhooks/533935953597076/J5t8S43hi5fbg-eBVuJDhD2RX_FMSUl` Command to remove webhook and all of its trackings.  
 
-###### !webhook list (Discord only)
+### !webhook list (Discord only)
 
 `!webhook list` show currently registered webhooks
 
-###### !track 
+### !track 
 
 `!track pikachu https://discordapp.com/api/webhooks/533935953597076/J5t8S43hi5fbg-eBVuJDhD2RX_FMSUl` Adds pikachu tracking for webhook in the command  
 
-###### !backup 
+### !backup 
 
 `!backup potato` Creates a backup of your current DM or Channel filters and creates a backup called `potato` for anyone to use
 
-###### !adminid
+### !adminid
 
 `!adminid @mod1 @mod2` Shows your user.id that can be used as configured admin. On Discord, this command can target extra users, on Telegram it returns just your id
