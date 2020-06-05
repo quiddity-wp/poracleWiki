@@ -1,6 +1,7 @@
 <template>
   <div>
     <div v-if="version === 3" v-html="v3Hello" />
+    <img src="~/assets/PoracleJSWiki.png"></img>
     <div v-if="version === 4" v-html="v4Hello" />
   </div>
 </template>

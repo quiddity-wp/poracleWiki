@@ -110,6 +110,11 @@ export default {
 					icon: 'mdi-json',
 					title: 'Webhook examples',
 					to: '/webhookExamples'
+				},
+				{
+					icon: 'mdi-eye',
+					title: 'Message visualizer',
+					to: '/visualizer'
 				}
 			],
 			title: 'Poracle Wiki'
