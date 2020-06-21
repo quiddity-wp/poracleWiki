@@ -1,7 +1,7 @@
 # Config file
 
 
-#### Config files
+## Config files
 
 Before first running PoracleJS, you need to create a `.env` file.  
 There is an example you can copy over to begin with `cp .env.example .env`.  
@@ -9,7 +9,7 @@ There is an example you can copy over to begin with `cp .env.example .env`.
 Altenatively, you can use a json config by copying from defaults `cp config/default.json config/local.json`
 
 
-###### Database settings
+### Database settings
 ```json
 DB_HOST=
 DB_USER=
@@ -31,7 +31,7 @@ DB_CONNECTION_TIMEOUT=
 |   
 
 
-###### General settings
+### General settings
 
 ```json
 LOG_LEVEL=
@@ -51,13 +51,13 @@ IP_BLACKLIST=
   |logSize | Maximum size of log file in Mb, default 25.|
   |host |   Webserver host. |
   |port | Webserver port. | 
-  |imgurl | Source of monster icons. Trailing slash is important. [see originals](https://github.com/KartulUdus/PoracleJS/tree/master/src/app/util/images) |
+  |imgurl | Source of monster icons. Trailing slash is important. [see originals](https://github.com/KartulUdus/PoracleJS/tree/master/src/util/images) and [nileplumb alternatives](https://github.com/nileplumb/PkmnShuffleMap) and see alternative half-shiny icons [for PMSF](https://github.com/geekygreek7/pokedave_shuffle_icons_-PMSF-/) (use:  `https://raw.githubusercontent.com/geekygreek7/pokedave_shuffle_icons_-PMSF-/master/`) or [for RDM](https://github.com/geekygreek7/pokedave_shuffle_icons_-RDM-)|
   | max_pokemon | Biggest released pokemon_id. Needed for tracking batch tracking of mainimum/maximum IV.|
   | monsterMinimumTimeTillHidden | Minimum amount of seconds for an alert to trigger|
   | ipWhitelist | List of allowed IP's to send POST webhooks. defaults to everything []|
   | ipBlacklist | List of blocked IP's to send POST webhooks. defaults to nothing []|
 
-##### Locale settings
+### Locale settings
   ```json
 TIME_FORMAT=             # default: en-gb
 TIME_STRING=             # default: LTS
@@ -72,7 +72,7 @@ PORACLE_LANGUAGE=                # one of ['en', 'de', 'fr', 'ja', 'ko', 'ru']
   | language | Translates pokemon for alerts and commands. options are one of one of ['en', 'de', 'fr', 'ja', 'ko', 'ru'].|
 
 
-##### Geocoding Settings Maps settings
+### Geocoding Settings Maps settings
 
 ```json
 GEO_PROVIDER=
@@ -103,7 +103,7 @@ MAP_TYPE=
 |type| Style of static map. Can be one of: <br/>roadmap <br/>satellite <br/>hybid <br/>dark |
 
 
-##### Telegram settings
+### Telegram settings
 
 ```js
 TLG_TOKEN=["400000002:AAhdsjl_alkrhjfsqlkjEQ"] 
@@ -114,7 +114,7 @@ TLG_LOCATION=         # if telegram should send map, default=true
 
 ```
 
-##### Discord settings
+### Discord settings
 
 ```json
 ## If discord is enabled, default true
@@ -152,7 +152,7 @@ IV_COLORS=
 |limitamount| Amount of alerts that a user can receive during `limitsec` seconds |
 |iv_colors| A list of css style hex colors for iv quality.|
 
-**IV colors**
+### IV colors
 There must be 6 colors defined, from worst IV to best.
 
 The Colors are defined as you would in a html or css file: #rrggbb eg: #ff0000 for red.
@@ -170,7 +170,7 @@ The tiers of IV colors are as follows:
 
 
 
-**Commands**
+### Commands
 
 Any command name can be renamed in the config file.
 
