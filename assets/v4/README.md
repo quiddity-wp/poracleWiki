@@ -1,5 +1,3 @@
-![logo](https://raw.githubusercontent.com/KartulUdus/PoracleJS/master/docs/_assets/PoracleJS.png)  
-
 [![Build Status](https://travis-ci.org/KartulUdus/PoracleJS.svg?branch=master)](https://travis-ci.org/KartulUdus/PoracleJS)
 
 #### Introduction
@@ -10,7 +8,7 @@ It allows for high end-user configurability using discord `!commands` or telegra
 
 #### Links
 
-- [WIKI](https://kartuludus.github.io/PoracleJS/#/) - Useful for words of wizdom!  
+- [WIKI](https://wiki.poracle.world/) - Useful for words of wizdom! ([edit the wiki](https://github.com/KartulUdus/poracleWiki))
 - [Discord](https://discord.gg/AathPCp) - Place for #help and #announcments  
 
 ### Install
