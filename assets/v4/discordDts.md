@@ -23,7 +23,7 @@ Sometimes it's necessary to use three curly braces on each side. This avoids url
     "template": {
       "embed": {
         "color": "{{ivcolor}}",
-        "title": "{{round iv}}% {{name}} cp:{{cp}} L:{{level}} {{atk}}/{{def}}/{{sta}} {{boostemoji}}",
+        "title": "{{round iv}}% {{name}}{{#if form}}{{#isnt formname 'Normal'}} {{formname}}{{/isnt}}{{/if}}  cp:{{cp}} L:{{level}} {{atk}}/{{def}}/{{sta}} {{boostemoji}}",
         "description": "End: {{time}}, Time left: {{tthm}}m {{tths}}s \n {{addr}} \n quick: {{quickMove}}, charge {{chargeMove}} \n Maps: [Google]({{{mapurl}}}) | [Apple]({{{applemap}}})",
         "thumbnail": {
           "url": "{{{imgUrl}}}"
@@ -44,7 +44,7 @@ For monsters without IV information, you can specify a different message.
     "template": {
       "embed": {
         "color": "{{color}}",
-        "title": "?% {{name}} {{boostemoji}}",
+        "title": "?% {{name}}{{#if form}}{{#isnt formname 'Normal'}} {{formname}}{{/isnt}}{{/if}}  {{boostemoji}}",
         "description": "Ends: {{time}}, Time left: {{tthm}}m {{tths}}s \n {{addr}} \n Maps: [Google]({{{mapurl}}}) | [Apple]({{{applemap}}})",
         "thumbnail": {
           "url": "{{{imgUrl}}}"
@@ -118,7 +118,7 @@ Any of the fields can be customized with the following:
     "platform": "discord",
     "template": {
       "embed": {
-        "title": "Raid against {{name}} has started at {{gymName}}!",
+        "title": "Raid against {{name}}{{#if form}}{{#isnt formname 'Normal'}} {{formname}}{{/isnt}}{{/if}}  has started at {{gymName}}!",
         "description": "CP: {{cp}}, quick: {{quickMove}}, charge {{chargeMove}} \n Maps: [Google]({{{mapurl}}}) | [Apple]({{{applemap}}})",
         "color": "{{color}}",
         "thumbnail": {
