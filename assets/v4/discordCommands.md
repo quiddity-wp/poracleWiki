@@ -174,13 +174,13 @@ Available filters:
 |gen|`!quest gen5`| tracks quests for all gen5 pokemon rewards within your area|
 |all items|`!quest all items`| tracks quests for all item rewards within your area|
 |d|`!quest snorlax d50`| Tracks Snorlax awarding quests within 50m of set location|
-|stardust|`!quest stardust d1000`| Tracks quests within 1km that awards stardust|
+|stardust|`!quest stardust rare_candy silver_pinap_berry d1000`| Tracks quests within 1km that awards stardust, rare candy, or silver pinaps|
 
 
 ### !quest remove
 
-`!quest remove all pokemon pinap berry stardust`  
-Removes quest tracking for all pokemon, pinap berries and strdust.
+`!quest remove all pokemon rare_candy stardust`  
+Removes quest tracking for all pokemon, rare_candy, and stardust.
 
 ## Rocket Invasion Tracking commands
 
